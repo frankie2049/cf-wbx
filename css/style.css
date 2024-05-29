@@ -99,3 +99,16 @@ header {
   background: #fff;
   padding:50px 0;
 }
+
+nav { 
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+nav a.current {
+  color: #0540ff !important; /* 文本颜色变为白色 */
+  font-weight: 800 !important; /* 加粗文本 */
+}
