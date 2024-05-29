@@ -115,7 +115,7 @@ nav a.current {
 
 @media screen and (max-width:500px){
   .wrapper {
-    width: 100%;
+    width: 100% !important;
 }
 nav a { 
   background: #fff;
