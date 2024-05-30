@@ -118,7 +118,7 @@ nav a.current {
 /* 手机端样式 */
 @media screen and (max-width: 500px) {
   .wrapper {
-      width: 480px !important;
+      max-width: 420px !important;
       padding: 10px 5px;
       margin:10px 5px;
   }
