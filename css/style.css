@@ -114,14 +114,11 @@ nav a.current {
 
 /* 手机端样式 */
 @media screen and (max-width: 500px) {
-  body {
-    font-size: 14px;
-  }
-    .wrapper {
-      width: 96%;
-      max-width: none;
-      padding: 10px 15px;
-      margin: 2%;
+  .wrapper {
+    width: 96%; /* 设置为100%宽度 */
+    max-width: none; /* 移除最大宽度限制 */
+    padding: 10px 15px;
+    margin: 2%;
   }
 
   nav {
@@ -141,5 +138,6 @@ nav a.current {
   iframe {
     width: 100%;
   }
+
 
 }
