@@ -9,11 +9,15 @@ body {
   font-weight: 300;
   color: #555;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 防止页面溢出 */
 }
 
-h2{
-    margin-bottom: 10px !important;
+h2 {
+  margin-bottom: 10px !important;
 }
+
 p {
   margin-bottom: 2em;
 }
@@ -32,10 +36,6 @@ header {
 
 .pageTitle {
   color: #FF7600;
-}
-
-
-.pageTitle {
   font-size: 2em;
   font-weight: 700;
   line-height: 2em;
@@ -48,31 +48,30 @@ header {
 }
 
 .background {
-  background: 
-    url("http://img.talkandroid.com/uploads/2013/03/htc-sense-5-wallpaper-3.jpg")
-    repeat;
+  background: url("http://img.talkandroid.com/uploads/2013/03/htc-sense-5-wallpaper-3.jpg") repeat;
   background-size: 100% auto;
   position: fixed;
   width: 100%;
   height: 300%;
   top: 0;
   left: 0;
-  z-index: -1
+  z-index: -1;
 }
 
 .wrapper {
-  width: 800px;
+  width: 80%; /* 默认宽度 */
+  max-width: 800px; /* 设置最大宽度 */
   padding: 40px;
   margin: 20px auto;
   background: #fff;
-  box-shadow:  0px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box; /* 确保padding和border不会导致宽度溢出 */
 }
 
 .wrapper img {
-    width: 100%;
-    height: auto; /* 保持图片的纵横比 */
-  }
-
+  width: 100%;
+  height: auto; /* 保持图片的纵横比 */
+}
 
 .slogan {
   position: fixed;
@@ -89,19 +88,18 @@ header {
   font-weight: 700;
   line-height: 80px;
   color: #fff;
-  
   text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
 }
 
-.cover-up{
+.cover-up {
   position: relative;
   top: -100px;
   width: 100%;
   background: #fff;
-  padding:50px 0;
+  padding: 50px 0;
 }
 
-nav { 
+nav {
   background: #fff;
   width: 100%;
   text-align: center;
@@ -110,43 +108,39 @@ nav {
 }
 
 nav a.current {
-  color: #0540ff !important; /* 文本颜色变为白色 */
+  color: #0540ff !important; /* 文本颜色变为蓝色 */
   font-weight: 800 !important; /* 加粗文本 */
 }
-
 
 /* 手机端样式 */
 @media screen and (max-width: 500px) {
   .wrapper {
-      max-width: 390px !important;
-      padding: 10px 5px;
-      margin:10px 5px;
+    width: 100%; /* 设置为100%宽度 */
+    max-width: none; /* 移除最大宽度限制 */
+    padding: 10px 5px;
+    margin: 10px 0;
   }
 
   nav {
-      text-align: center;
-      font-size: 16px;
-      padding: 10px 0;
-     
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
   }
 
   .pageTitle {
-      font-size: 1.5em;
-      
+    font-size: 1.5em;
   }
 
   .pageSubTitle {
-      font-size: 1.2em;
-     
+    font-size: 1.2em;
   }
 
-
   iframe {
-      width: 100%;
+    width: 100%;
   }
 
   .cover-up {
-      text-align: center;
-      padding: 10px;
+    text-align: center;
+    padding: 10px;
   }
 }
