@@ -11,6 +11,16 @@ body {
   width: 100%;
 }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box; /* 确保padding和border不会导致宽度溢出 */
+    background: #fff;
+    box-shadow:  0px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  
+}
+
+
 h2{
     margin-bottom: 10px !important;
 }
@@ -60,13 +70,13 @@ header {
   z-index: -1
 }
 
-.wrapper {
-  width: 800px;
-  padding: 40px;
-  margin: 20px auto;
-  background: #fff;
-  box-shadow:  0px 3px 3px 1px rgba(0, 0, 0, 0.25);
-}
+@media screen and (min-width: 501px) {
+  .wrapper {
+      max-width: 800px; /* 设置最大宽度 */
+      padding: 40px;
+      margin: 20px auto;
+  }
+
 
 .wrapper img {
     width: 100%;
@@ -118,7 +128,7 @@ nav a.current {
 /* 手机端样式 */
 @media screen and (max-width: 500px) {
   .wrapper {
-      max-width: 420px !important;
+      width:100%!important;
       padding: 10px 5px;
       margin:10px 5px;
   }
