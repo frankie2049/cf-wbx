@@ -8,6 +8,7 @@ body {
   line-height: 1.6em;
   font-weight: 300;
   color: #555;
+  width: 100%;
 }
 
 h2{
@@ -60,7 +61,7 @@ header {
 }
 
 .wrapper {
-  width: 520px;
+  width: 800px;
   padding: 40px;
   margin: 20px auto;
   background: #fff;
@@ -117,9 +118,9 @@ nav a.current {
 /* 手机端样式 */
 @media screen and (max-width: 500px) {
   .wrapper {
-      max-width: 480px !important;
+      width: 480px !important;
       padding: 10px 5px;
-      margin:0;
+      margin:10px 5px;
   }
 
   nav {
