@@ -113,14 +113,50 @@ nav a.current {
   font-weight: 800 !important; /* 加粗文本 */
 }
 
-@media screen and (max-width:500px){
+
+/* 手机端样式 */
+@media screen and (max-width: 500px) {
   .wrapper {
-    width: 100% !important;
-}
-nav a { 
-  background: #fff;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-}
+      width: 100% !important;
+      padding: 10px 5px;
+      margin:0;
+  }
+
+  nav {
+      text-align: center;
+     
+  }
+
+  nav a {
+      
+      background: #fff;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .pageTitle {
+      font-size: 1.5em;
+      
+  }
+
+  .pageSubTitle {
+      font-size: 1.2em;
+     
+  }
+
+  p, h2, h3 {
+      font-size: 1em;
+  }
+
+  iframe {
+      width: 100%;
+  }
+
+  .cover-up {
+      text-align: center;
+      padding: 10px;
+  }
 }
